@@ -19,11 +19,11 @@ A aplicação está **pronta para produção** e pode ser deployada em minutos!
 
 ### Plataformas Suportadas
 
-| Plataforma | Custo | Setup |
-|-----------|-------|-------|
-| **[Render.com](https://render.com)** | Gratuito | 2-3 min ⚡ |
-| **[Railway.app](https://railway.app)** | Gratuito (trial) | 2-3 min |
-| **[Heroku](https://heroku.com)** | $5+/mês | 2-3 min |
+| Plataforma                             | Custo            | Setup      |
+| -------------------------------------- | ---------------- | ---------- |
+| **[Render.com](https://render.com)**   | Gratuito         | 2-3 min ⚡ |
+| **[Railway.app](https://railway.app)** | Gratuito (trial) | 2-3 min    |
+| **[Heroku](https://heroku.com)**       | $5+/mês          | 2-3 min    |
 
 👉 **[Guia Completo de Deploy](DEPLOY.md)**
 
@@ -32,6 +32,7 @@ A aplicação está **pronta para produção** e pode ser deployada em minutos!
 ## 💻 Executar Localmente
 
 ### Pré-requisitos
+
 - Python 3.7+
 - pip (gerenciador de pacotes)
 
@@ -50,6 +51,7 @@ python app.py
 ```
 
 ### Acesso
+
 Abra o navegador em: **http://localhost:5000**
 
 ---
@@ -116,11 +118,13 @@ TalksApp/
 ## 🐛 Troubleshooting
 
 ### Erro: "ModuleNotFoundError: No module named 'flask'"
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Porta 5000 já em uso
+
 ```bash
 # Windows
 netstat -ano | findstr :5000
@@ -131,6 +135,7 @@ lsof -ti:5000 | xargs kill -9
 ```
 
 ### Banco de dados corrompido
+
 ```bash
 # Remover e recriar
 rm database.db
