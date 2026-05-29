@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TalksApp Chat</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body class="chat-body">
+    <div class="chat-container">
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <h2>TalksApp 💬</h2>
+
+        <button id="themeButton">🌙 Tema</button>
+
+        <h3>Online</h3>
+
+        <ul id="usuariosOnline"></ul>
+
+        <a href="/chat_privado">
+          <button class="private-chat">💌 Chat Privado</button>
+        </a>
+
+        <a href="/limpar_chat">
+          <button class="clear-chat">🗑️ Limpar Conversa</button>
+        </a>
+        <a href="/logout">
+          <button class="logout">Sair</button>
+        </a>
+      </div>
+
+      <!-- CHAT -->
+      <div class="chat-box">
+        <div class="top-bar">{{ usuario }}</div>
+
+        <div id="mensagens" class="mensagens"></div>
+
+        <form id="formMensagem">
+          <input
+            type="text"
+            id="mensagem"
+            placeholder="Digite uma mensagem..."
+            autocomplete="off"
+            required
+          />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

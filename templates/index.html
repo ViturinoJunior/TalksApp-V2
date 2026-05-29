@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalksApp</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>TalksApp 💬</h1>
+
+    <p>Converse com seus amigos online</p>
+
+    <div class="buttons">
+
+        <a href="/login">
+            <button>Entrar</button>
+        </a>
+
+        <a href="/cadastro">
+            <button class="secondary">Criar Conta</button>
+        </a>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

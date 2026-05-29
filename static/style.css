@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+p {
+  margin-bottom: 25px;
+  color: #cbd5e1;
+}
+
+button {
+  background: #3b82f6;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: #334155;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.secondary {
+  background: #475569;
+}
+
+.secondary:hover {
+  background: #64748b;
+}
+.chat-body {
+  background: #0f172a;
+  overflow: hidden;
+}
+
+.chat-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background: #1e293b;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 10px;
+  background: #334155;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  background: #1e293b;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mensagens {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.msg {
+  background: #2563eb;
+  padding: 12px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  max-width: 300px;
+}
+
+.msg strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#formMensagem {
+  display: flex;
+  padding: 20px;
+  background: #1e293b;
+}
+
+#formMensagem input {
+  flex: 1;
+}
+
+.logout {
+  background: #ef4444;
+}
+
+.light-mode {
+  background: #f1f5f9 !important;
+  color: #111 !important;
+}
+.clear-chat {
+  background: #f59e0b;
+  margin-bottom: 10px;
+}
+
+.clear-chat:hover {
+  background: #d97706;
+}
+
+.private-chat {
+  background: #8b5cf6;
+  margin-bottom: 10px;
+}
+
+.private-chat:hover {
+  background: #7c3aed;
+}
