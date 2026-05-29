@@ -52,7 +52,7 @@ python app.py
 
 ### Acesso
 
-Abra o navegador em: **http://localhost:5000**
+Abra o navegador em: **<http://localhost:5000>**
 
 ---
 

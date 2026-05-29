@@ -24,8 +24,13 @@ def calcular_idade(nascimento):
     return idade
 
 # CONEXÃO
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE_PATH = os.path.join(BASE_DIR, "database.db")
+
 def conectar():
-    return sqlite3.connect("database.db")
+    conexao = sqlite3.connect(DATABASE_PATH)
+    conexao.row_factory = sqlite3.Row
+    return conexao
 
 # CRIAR BANCO
 def criar_banco():
@@ -562,4 +567,5 @@ def enviar_privada():
         return f"Erro ao enviar mensagem: {str(e)}", 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    porta = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=porta, debug=False)
